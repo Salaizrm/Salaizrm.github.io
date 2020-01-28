@@ -1,11 +1,11 @@
 # Site settings
 author: Robert Salaiz
-title: 
+title: The first step to something better
 header-img: img/home-bg.png
 email: work.salaizrm@gmail.com
 copyright_name: Robert Salaiz
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Why I want to learn coding
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Salaizrm
