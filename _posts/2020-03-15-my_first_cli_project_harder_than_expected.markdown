@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My First CLI Project: Harder than expected"
-date:       2020-03-16 02:50:55 +0000
+date:       2020-03-15 22:50:56 -0400
 permalink:  my_first_cli_project_harder_than_expected
 ---
 
@@ -19,16 +19,16 @@ first, I’d like to address some things that gave me a lot of trouble so that h
 
 - first, off if you followed the instructions on how to create your gem that were provided, awesome. but try to avoid putting a "dash (-)” when naming your project. it'll just create an extra folder with your version folder located in it, then you'll have to clean up a little before you even start your project (your already going to have to clean up quite a bit, might as well mitigate the damage).
 
-![](https://imgur.com/r13Qrb8)
-![](https://imgur.com/hOfJhN6)
+![](https://i.imgur.com/C4TA9Oz.png?1)
+![](https://i.imgur.com/HnUsQpk.png?1)
 
 - second, go to your gemspec file it should look like this: 
 
-![](https://imgur.com/bqbglU8)
+![](https://i.imgur.com/vYasjQW.png?1)
 
 Alright now go ahead and fill in what you can and delete these:
 
-![](https://imgur.com/IsNwvXt)
+![](https://i.imgur.com/OtOafnE.png?1)
 
 if you don’t delete these and fill in the TODO's, then anytime you run a test ruby going to let you know that none of those are filled out and stop you from progressing. 
 Also: spec.add_development_dependency "nokogiri" and spec.add_development_dependency "pry". You do this so it knows to use Nokogiri and Pry. 
@@ -37,7 +37,7 @@ Also: spec.add_development_dependency "nokogiri" and spec.add_development_depend
 
 -fourth, if your using the learn IDE 3 client, remember you'll always be dropped into Temporary. Make sure to enter in your terminal: cd your-project-name
 
-![](https://imgur.com/E2qo82h)
+![](https://i.imgur.com/E2qo82h.png?1)
 
 you can use this to go deeper into your folders, very useful tool. but if you go too deep make sure to enter: cd .. 
 this will get you out.
@@ -48,16 +48,16 @@ oh, and one last thing, remember to save often and always.
 
 now that those are out of the way, I’d like to show you how I created the scraper that grabs the info for my CLI. Hopefully this will give you a head start to complete your project and save some sanity. A reminder, this is how i built my scraper. yours could very well differ and not one scrape method is a one size fit all for every project.
 
-![](https://imgur.com/1I30RNp)
+![](https://i.imgur.com/v4z98lx.png)
 
 I defined my scrape method as def self.scrape_month
 at first I only had the first loop |r|, after not being able to scrape from it I was lost for a long time, finally I asked for help and a teacher (Juan, very smart dude), was able to show me how to scrape all the data i needed to. since I was scraping from a list of objects that all shared the same "div.ds-main"
 
-![](https://imgur.com/ZstDtyl)
+![](https://i.imgur.com/ZstDtyl.png?1)
 
 I had to go further in the loop and to (".calendar-entry"). I highly recommend putting a binding.pry down before each thing you want to pull to make sure its pulling correctly, if at all. 
 
-![](https://imgur.com/XAlhq77)
+![](https://i.imgur.com/XAlhq77.png)
 
 This is my games.rb file, this file allows me to store and call upon all the things my scraper stored.
 
@@ -66,7 +66,7 @@ If your having trouble calling on the binding.pry, don’t worry you’re not al
 
 to test your own code, watch the video provided to make sure you have set up all the necessary 'requires' and 'require_relative'. Next, open your console ./bin/console, it'll tell you you don’t have permission to access. to get around this type in your terminal 'cd bin/' this will put you in your bin folder, next enter ls -lah you should get something like this:
 
-![](https://imgur.com/Xz8MB6b)
+![](https://i.imgur.com/Xz8MB6b.png)
 
 next enter in chmod +x "name of file"
 for the example provided with the picture above you'd enter chmod +x daily-deal
