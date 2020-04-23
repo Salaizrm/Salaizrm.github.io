@@ -1,12 +1,13 @@
 ---
 layout: post
 title:      "Coding for a better future"
-date:       2020-01-28 19:34:30 +0000
+date:       2020-01-28 14:34:31 -0500
 permalink:  coding_for_a_better_future
 ---
 
-Why I want to learn this invaluable skill
-![](http://healingplus.com/wp-content/uploads/2019/01/1548699722_maxresdefault.jpg/)
+### Why I want to learn this invaluable skill
+![](https://i.imgur.com/k1n6waH.jpg?1)
+
 
 I am currently studying software engineering for a multitude of reasons. Currently the number one reason is to finally have stability in my life, to finally not live paycheck to paycheck and to finally feel accomplished.
 
